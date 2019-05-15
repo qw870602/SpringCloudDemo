@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="commonApi" />
+        <module name="eureka-sever" />
+        <module name="sendCodePlatformQrService" />
+        <module name="sendCodePlatformUserService" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="certificateAuthorities" target="1.8" />
+      <module name="commonApi" target="1.8" />
+      <module name="eureka-sever" target="1.8" />
+      <module name="sendCardPlatformQrService" target="1.8" />
+      <module name="sendCardPlatformSettlement" target="1.8" />
+      <module name="sendCardPlatformUserService" target="1.8" />
+      <module name="sendCodePlatformQrService" target="1.8" />
+      <module name="sendCodePlatformSettlement" target="1.8" />
+      <module name="sendCodePlatformUserService" target="1.8" />
+      <module name="trafficQrService" target="1.8" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

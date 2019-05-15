@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/commonApi/commonApi.iml" filepath="$PROJECT_DIR$/commonApi/commonApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-sever/eureka-sever.iml" filepath="$PROJECT_DIR$/eureka-sever/eureka-sever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sendCodePlatformQrService/sendCodePlatformQrService.iml" filepath="$PROJECT_DIR$/sendCodePlatformQrService/sendCodePlatformQrService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sendCodePlatformUserService/sendCodePlatformUserService.iml" filepath="$PROJECT_DIR$/sendCodePlatformUserService/sendCodePlatformUserService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trafficQrService.iml" filepath="$PROJECT_DIR$/trafficQrService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>

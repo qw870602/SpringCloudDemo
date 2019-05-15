@@ -1,0 +1,13 @@
+#工程名
+trafficQrService
+#注册中心
+eureka                      7070,7071
+#网关
+zuul                        7072,7073
+#发码平台用户服务
+sendCodePlatformUserService   7074
+#发码平台订单服务
+sendCodePlatformQrService     7075,7076
+#工具包
+commonApi
+

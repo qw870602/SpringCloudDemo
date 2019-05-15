@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/certificateAuthorities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-sever" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCardPlatformQrService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCardPlatformSettlement" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCardPlatformUserService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCodePlatformQrService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCodePlatformSettlement" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sendCodePlatformUserService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul" charset="UTF-8" />
+  </component>
+</project>

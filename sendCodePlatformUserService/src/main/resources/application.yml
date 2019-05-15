@@ -1,0 +1,45 @@
+eureka:
+  client:
+    serviceUrl:
+      #正式环境Eureka做主副备份,故这里预留2个地址
+      defaultZone: http://localhost:7070/eureka/
+  instance:
+    #eureka客户端需要多长时间发送心跳给eureka服务器，表明他仍然活着，默认30秒
+    lease-renewal-interval-in-seconds: 5
+    #eureka服务器在接受到实例的最后一次发出的心跳后，需要等待多久才可以将此实例删除,默认90S
+    #如果该值太大，则很可能将流量转发过去的时候，该instance已经不存活了。如果设置太小了，则instance则很可能因为临时的网络抖动而被摘除掉
+    lease-expiration-duration-in-seconds: 10
+
+server:
+  port: 7074
+
+spring:
+  application:
+    name: sendCodePlatformUserService
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+      druid:
+        #jdbc配置
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+        username: root
+        password: 123456
+        #连接池配置
+        initial-size: 5
+        min-idle: 5
+        max-active: 10
+        max-wait: 50000
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+management:
+  security:
+    enabled: false
+
+
+
+

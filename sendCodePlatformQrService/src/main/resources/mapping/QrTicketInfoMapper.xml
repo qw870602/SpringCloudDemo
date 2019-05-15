@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lovnx.mapper.QrTicketInfoMapper">
+
+    <insert id="saveQrTicketInfo" parameterType="com.lovnx.entity.QrTicketInfo">
+        INSERT INTO qr_tiket_info(
+              user_no,
+              qr_no,
+              qr_str
+        ) VALUES (
+                #{userNo},
+                #{qrNo},
+                #{qrStr}
+        )
+    </insert>
+
+</mapper>

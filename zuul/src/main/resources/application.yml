@@ -1,0 +1,63 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7070/eureka/
+    #表示eureka client间隔多久去拉取服务器注册信息,默认为30秒
+    registry-fetch-interval-seconds: 5
+
+server:
+  port: 7072
+
+spring:
+  application:
+    name: zuul
+  ## Redis 配置
+  ## Redis数据库索引（默认为0）
+  redis:
+    database: 0
+    ## Redis服务器地址
+    host: 127.0.0.1
+    ## Redis服务器连接端口
+    port: 6379
+    #Redis服务器连接密码（默认为空）
+    ## 连接池最大连接数（使用负值表示没有限制）
+    pool:
+      max-active: 8
+      ## 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      ## 连接池中的最大空闲连接
+      max-idle: 8
+      ## 连接池中的最小空闲连接
+      min-idle: 0
+      ## 连接超时时间（毫秒）
+      timeout: 30000
+
+zuul:
+  routes:
+    #用户类请求
+    api-a:
+      path: /api/user/**
+      serviceId: sendCodePlatformUserService
+    #发码类请求
+    api-b:
+      path: /api/qr/**
+      serviceId: sendCodePlatformQrService
+  #host:
+      #url配置生效
+      socket-timeout-millis: 50000
+      connect-timeout-millis: 50000
+
+#设置hystrix超时时间为50S，默认1S服务无响应就直接返回了
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+#ribbon:
+  # 请求处理的超时时间
+  ReadTimeout: 50000
+  #请求连接的超时时间
+  ConnectTimeout: 50000
